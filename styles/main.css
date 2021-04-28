@@ -1,0 +1,143 @@
+
+/* Khalid Slideshow
+/* By: Griffin Embree */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: black; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(rgb(36, 21, 177),rgb(33, 134, 23)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(rgb(102, 58, 0),rgb(12, 142, 146)); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(rgb(218, 126, 6),rgb(18, 155, 235)); /*Fx 3.6-15*/
+	background: linear-gradient(rgb(238, 158, 11), rgb(228, 140, 9)); /*Standard*/
+}
+
+body {
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+	background-color: #000099;
+	border: 3px solid #ff5714;
+	border-radius: 75px;
+	box-shadow: 3px 10px 35px #da861a, -3px -10px 35px #ad620c;
+}
+
+/* the styles for links */
+a:link {
+	text-decoration: none;
+}
+a:focus, a:hover {
+	text-decoration: underline;
+}
+
+header {
+	vertical-align: middle;
+	padding: 20px 1.5em 40px;
+	font-size: 150%;
+	color: #ca3b17;
+	background-color: #000099;
+	border-radius: 75px 75px 0 0;
+	border-bottom: 3px solid red;
+}
+header h1 {
+	padding: 15px 0 0;
+	font-size: 150%;
+	
+}
+header img {
+	float: left;
+	padding-right: 1em;
+	height: 12%;
+	width: 12%;
+}
+
+section div {
+	font-size: 99%;
+}
+#wrapper, #slider {
+	border-radius: 25px;
+}
+.slider-wrapper, .theme-bar {
+	border-radius: 25px;
+	box-shadow: 10px 10px 25px #000033;
+}
+#slider img {
+	max-width: 800px;
+	width: 100%;
+	border-radius: 25px;
+}
+
+footer p {
+	clear: both;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 30px 1.5em;
+	font-size: 80%;
+	color: red;
+	background-color: lightblue;
+	border-radius: 0 0 75px 75px;
+
+}
+
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+
+	html { 
+		background-color: #3b3f47;
+		background: none;
+	}
+
+	body {
+		width: 100%;
+		border: none;
+		border-radius: 0;
+		font-size: 80%;
+		box-shadow: none;
+	}
+
+	header { 
+		align-items: center;
+		border-radius: 0; 
+		background-color: #3b3f47;
+		border-bottom: solid silver 1px;
+	}
+
+
+	header img { float: none; }
+	header h1 { font-size: 100%; }
+
+	header { text-align: center; }
+
+	section {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+	#wrapper, #slider, .slider-wrapper, .theme-bar {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		box-shadow: none;
+		border-radius: 0;
+
+	}
+	#slider img {
+		width: 100%;
+		border-radius: 0;
+	}
+	footer p { border-radius: 0; }
+
+}
+
+
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 80%; }
+}
